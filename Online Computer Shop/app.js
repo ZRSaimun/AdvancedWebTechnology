@@ -50,7 +50,7 @@ app.get('/', (req, res) => {
             var restaurants = {
                 restaurantList: results
             };
-            res.render('index', restaurants);
+            res.render('index', shops);
         } else {
             var restaurants = {
                 restaurantList: ""
