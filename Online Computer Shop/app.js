@@ -44,21 +44,7 @@ app.use('/', express.static('asset'));
 
 //router
 /**---------------------------------------------- */
-app.get('/', (req, res) => {
-    shopModel.getAll(function(results) {
-        if (results.length > 0) {
-            var shops = {
-                shopList: results
-            };
-            res.render('index', shops);
-        } else {
-            var shops = {
-                shopList: ""
-            };
-            res.render('index', shops);
-        }
-    });
-});
+
 
 app.get('/setCookie', (req, res) => {
     res.cookie('cookie1', 'first cookie');
