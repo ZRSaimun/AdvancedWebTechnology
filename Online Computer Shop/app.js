@@ -8,7 +8,7 @@ var signup = require('./controllers/signup');
 var login = require('./controllers/login');
 var admin = require('./controllers/admin');
 var customer = require('./controllers/customer');
-
+var shopModel = require.main.require('./model/shopModel');
 
 
 var app = express();
