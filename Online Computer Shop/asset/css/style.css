@@ -141,7 +141,7 @@ select option[value=""][disabled] {
     display: none;
 }
 
-.button {
+button {
     border: none;
     width: 152px;
     height: 40px;
@@ -169,7 +169,7 @@ select option[value=""][disabled] {
     transition-duration: 0.5s;
 }
 
-.button:before {
+button:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -190,7 +190,7 @@ select option[value=""][disabled] {
     transition-timing-function: ease-out;
 }
 
-.button:hover:before {
+button:hover:before {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
     -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
