@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+</head>
+
+<body>
+    <ul>
+        <li><a class="active" href="/customer">Home</a></li>
+        <li style="float:right"><a href="/logout">Log Out</a></li>
+        <li style="float:right">
+            <div class="dropdown">
+                <div class="dropbtn">Profile</div>
+                <div class="dropdown-content">
+                    <a href="/customer/profile">View Profile</a>
+                    <a href="/customer/editProfile">Edit Profile</a>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div align="center">
+        <h1>Welcome Home,
+            <%=name%>
+        </h1>
+    </div>
+    <div align="center">
+        <span align="center">
+            <h3>All Shops</h3>
+        </span>
+        <table width="80%">
+            <tr>
+                <th width="10%">Logo</th>
+                <th width="30%">Name</th>
+                <th width="20%">Type</th>
+                <th width="20%">Location</th>
+                <th width="20%">Action</th>
+            </tr>
+
+            <% for(var i=0; i < shopList.length; i++){ %>
+                <tr align="center">
+                    <td>
+                        <img align="center" src="<%= shopList[i].R_IMAGE %>" alt="logo" height="100px" width="100px" />
+                    </td>
+                    <td>
+                        <%= shopList[i].R_NAME %>
+                    </td>
+                    <td>
+                        <%= shopList[i].R_TYPE %>
+                    </td>
+                    <td>
+                        <%= shopList[i].R_LOCATION %>
+                    </td>
+                    <td>
+                        <a href="/customer/shop/<%= shopList[i].R_ID %>">View</a>
+                    </td>
+                </tr>
+                <% } %>
+        </table>
+    </div>
+</body>
+
+</html>
