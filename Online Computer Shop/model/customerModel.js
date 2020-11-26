@@ -20,4 +20,10 @@ module.exports = {
             callback(status);
         });
     },
+    delete: function(customerId, callback) {
+        var sql = "delete from customers where M_ID = ?";
+        db.execute(sql, [customerId], function(status) {
+            callback(status);
+        });
+    }
 }
