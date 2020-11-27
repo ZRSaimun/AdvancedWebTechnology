@@ -58,7 +58,7 @@ router.get('/shop/:shopId', (req, res) => {
                         shop: shopDetails,
                         computerList: results
                     };
-                    res.render('customer/shopComputer', computer);
+                    res.render('customer/shopcomputer', computer);
                 } else {
                     var computer = {
                         shop: shopDetails,
@@ -93,7 +93,7 @@ router.get('/shop/:shopId/computer/review/:productId', (req, res) => {
     });
 });
 
-//! AJAX
+//! AJAX CODE
 router.get('/productReview/:productId/:commentText', (req, res) => {
     var comment = {
         customerId: req.session.uId,
@@ -120,6 +120,18 @@ router.get('/productReview/:productId/:commentText', (req, res) => {
 });
 
 
+//! product/computer details
+router.get('/shop/:shopId/:productID', (req, res) => {
 
+    productModel.get(req.params.productID, function(result) {
+        if (result.length > 0) {
+            var productDetails = {
+                product: result[0]
+            }
+            console.log(result[0].F_IMAGE);
+            res.render('customer/productDetails', productDetails);
+        }
+    });
+});
 
 module.exports = router;
