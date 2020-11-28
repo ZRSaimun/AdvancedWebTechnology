@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 28, 2020 at 12:00 PM
+-- Generation Time: Nov 28, 2020 at 02:20 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.11
 
@@ -40,11 +40,9 @@ CREATE TABLE `admins` (
 
 INSERT INTO `admins` (`A_ID`, `A_NAME`, `A_ADDRESS`, `A_EMAIL`) VALUES
 ('', '', '', ''),
-('bulbul', 'bulbul', 'bul', 'bul@gmail.com'),
-('cds', 'cdsssssss', 'gfsssss', 'cds@gmial.com'),
-('gfs', 'gfsssssss', 'gfsssssss', 'gfs@gmaill.com'),
-('ggggggg', 'gggg', 'ggggggg', 's@gm.jh'),
-('sdf', 'fdg', 'gfh', 'abir@gmail.com'),
+('a3', 'gfsssssss', 'gfsssssss', 'gfs@gmaill.com'),
+('u1', 'bulbul', 'bul', 'bul@gmail.com'),
+('u2', 'cdsssssss', 'gfsssss', 'cds@gmial.com'),
 ('zr', 'zr ssss', 'Basundhara', 'zr@gmail.com');
 
 -- --------------------------------------------------------
@@ -66,7 +64,8 @@ CREATE TABLE `customers` (
 
 INSERT INTO `customers` (`M_ID`, `M_NAME`, `M_ADDRESS`, `M_EMAIL`) VALUES
 ('abir', 'abirrrr', 'uttora', 'abir@gmail.com'),
-('c', 'customr', 'Basundhara', 'customer@yahoo.com');
+('c', 'customr', 'Basundhara', 'customer@yahoo.com'),
+('cust', 'customer', 'kuratoli', 'cust@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -231,14 +230,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`U_ID`, `U_PASSWORD`, `U_TYPE`, `U_STATUS`) VALUES
-('', '', 'ADMIN', 'VALID'),
-('a3', '123', 'ADMIN', 'VALID'),
-('abir', '123', 'CUSTOMER', 'VALID'),
 ('c', '7', 'CUSTOMER', 'VALID'),
-('s', '1', 'SELLER', 'VALID'),
-('sdf', '7', 'SELLER', 'VALID'),
-('u1', '1', 'ADMIN', 'VALID'),
-('u2', '2', 'ADMIN', 'VALID'),
 ('zr', '1', 'ADMIN', 'VALID');
 
 --
