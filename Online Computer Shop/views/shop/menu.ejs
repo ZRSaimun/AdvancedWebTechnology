@@ -8,14 +8,14 @@
 
 <body>
     <ul>
-        <li><a href="/customer">Home</a></li>
-        <li style="float:right"><a href="/logout">Log Out</a></li>
+        <li><a href="/">Home</a></li>
+        <li style="float:right"><a href="/login">Log In</a></li>
         <li style="float:right">
             <div class="dropdown">
-                <div class="dropbtn">Profile</div>
+                <div class="dropbtn">Sign Up</div>
                 <div class="dropdown-content">
-                    <a href="/customer/profile">View Profile</a>
-                    <a href="/customer/editProfile">Edit Profile</a>
+                    <a href="/signup/customer">customer</a>
+                    <a href="/signup/admin">Admin</a>
                 </div>
             </div>
         </li>
@@ -55,9 +55,7 @@
                         <%= computerList[i].F_ID %>
                     </td>
                     <td align="center">
-                        <a href="/customer/shop/<%= computerList[i].R_ID %>/<%= computerList[i].F_ID %>">
-                            <%= computerList[i].F_TITLE %>
-                        </a>
+                        <%= computerList[i].F_TITLE %>
                     </td>
                     <td align="center">
                         <%= computerList[i].F_DESCRIPTION %>
@@ -66,7 +64,7 @@
                         <img align="center" src="<%= computerList[i].F_IMAGE %>" alt="logo" height="200px" width="200px" />
                     </td>
                     <td align="center">
-                        <a href="/customer/shop/<%= computerList[i].R_ID %>/computer/review/<%= computerList[i].F_ID %>">Buy</a>
+                        <a href="/shop/<%= computerList[i].R_ID %>/computer/review/<%= computerList[i].F_ID %>">Read Review</a>
                     </td>
                 </tr>
                 <% } %>

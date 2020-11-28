@@ -2,58 +2,60 @@
 <html>
 
 <head>
-    <title>Add Shop</title>
+    <title>Add Computer</title>
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
 </head>
 
 <body>
     <ul>
         <li><a href="/admin">Home</a></li>
-        <li><a href="/logout">Log Out</a></li>
-        <li>
+        <li style="float:right"><a href="/logout">Log Out</a></li>
+        <li style="float:right">
             <div class="dropdown">
                 <div class="dropbtn">Profile</div>
                 <div class="dropdown-content">
-                    <a href="/admin/profile">View Profile</a><br>
+                    <a href="/admin/profile">View Profile</a>
                     <a href="/admin/editProfile">Edit Profile</a>
                 </div>
             </div>
         </li>
-        <li><a href="/admin/shops">All Shops</a></li>
-        <li><a class="active" href="/admin/addShop">Add Shop</a></li>
+        <li style="float:right"><a class="active" href="/admin/shops">All Shops</a></li>
+        <li style="float:right"><a href="/admin/addShop">Add Shop</a></li>
     </ul>
     <div align="center">
+        <span align="center">
+            <img align="center" src="" alt="logo" height="200px" width="200px"/>
+        </span>
+        <span align="center">
+            <h2><%=R_NAME%></h2>
+        </span>
+        <span align="center">
+            <i><%=R_DESCRIPTION%></i>
+        </span>
+        <br/>
+        <span align="center"><%=R_TYPE%></span>
+        <br/>
+        <span align="center"><%=R_LOCATION%></span>
+        <br/>
+        <br/>
+        <span align="center">
+            <h3>Add Computer</h3>
+        </span>
+        <br/>
         <form method="POST" enctype="multipart/form-data">
-            <span align="center">
-                <h3>Add Shop</h3>
-            </span>
             <table width="30%" align="center">
                 <tr>
-                    <td width="45%">Name</td>
+                    <td width="45%">Title</td>
                     <td width="10%">:</td>
                     <td width="45%">
-                        <input type="text" name="name" placeholder="Name">
+                        <input type="text" name="title" placeholder="Name" />
                     </td>
                 </tr>
                 <tr>
                     <td>Description</td>
                     <td>:</td>
                     <td>
-                        <input type="text" name="description" placeholder="Description">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Type</td>
-                    <td>:</td>
-                    <td>
-                        <input type="text" name="type" placeholder="Repair/Retail">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Location</td>
-                    <td>:</td>
-                    <td>
-                        <input type="text" name="location" placeholder="Location">
+                        <input type="text" name="description" placeholder="Description" />
                     </td>
                 </tr>
                 <tr>
@@ -65,6 +67,7 @@
                 </tr>
                 <tr>
                     <td></td>
+                    <input type="hidden" name="shopId" value="<%=R_ID%>" />
                     <td></td>
                     <td>
                         <input type="submit" name="add" value="Add" />
