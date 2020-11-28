@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 28, 2020 at 01:51 PM
+-- Generation Time: Nov 28, 2020 at 02:20 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.11
 
@@ -230,14 +230,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`U_ID`, `U_PASSWORD`, `U_TYPE`, `U_STATUS`) VALUES
-('', '', 'ADMIN', 'VALID'),
-('a3', '123', 'ADMIN', 'VALID'),
-('abir', '123', 'CUSTOMER', 'VALID'),
 ('c', '7', 'CUSTOMER', 'VALID'),
-('cust', '1', 'CUSTOMER', 'VALID'),
-('sdf', '7', 'SELLER', 'VALID'),
-('u1', '1', 'ADMIN', 'VALID'),
-('u2', '2', 'ADMIN', 'VALID'),
 ('zr', '1', 'ADMIN', 'VALID');
 
 --
