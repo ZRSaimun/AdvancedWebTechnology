@@ -27,7 +27,7 @@ router.get('/profile', (req, res) => {
     });
 });
 
-//! edit profile
+//*todo edit profile
 router.get('/editProfile', (req, res) => {
     adminModel.get(req.session.uId, function(result) {
         if (result.length > 0) {
@@ -54,10 +54,10 @@ router.post('/editProfile', (req, res) => {
     });
 });
 
-//! edit profile endddddddd
+//*todo edit profile endddddddd
 
 
-//! add shop
+//*todo add shop
 router.get('/addShop', (req, res) => {
     res.render('admin/addShop');
 });
@@ -80,10 +80,10 @@ router.post('/addShop', (req, res) => {
     });
 });
 
-//! add Shop endddddddd
+//*todo add Shop endddddddd
 
 
-//! edit shop
+//*todo edit Shop
 router.get('/shops', (req, res) => {
     shopModel.getAll(function(results) {
         if (results.length > 0) {
@@ -114,10 +114,10 @@ router.post('/shop/edit/:shopId', (req, res) => {
     });
 });
 
-//! edit shop endd
+//*todo edit shop endd
 
 
-//! add computer
+//*todo add computer
 router.get('/shop/addComputer1/:shopId', (req, res) => {
     shopModel.get(req.params.shopId, function(result) {
         if (result.length > 0) {
@@ -127,7 +127,7 @@ router.get('/shop/addComputer1/:shopId', (req, res) => {
 });
 
 router.post('/shop/addComputer1/:shopId', (req, res) => {
-    console.log("ad mcomputeru");
+    console.log("ad computer");
     var product = {
         title: req.body.title,
         description: req.body.description,
@@ -162,9 +162,9 @@ router.post('/shop/:shopId/computer/delete/:computerId', (req, res) => {
     });
 });
 
-//! add computer endddd
+//*todo add computer endddd
 
-//! edit shop
+//*todo edit shop
 router.get('/shop/edit/:shopId', (req, res) => {
     shopModel.get(req.params.shopId, function(result) {
         if (result.length > 0) {
@@ -192,10 +192,10 @@ router.post('/shop/edit/:shopId', (req, res) => {
         }
     });
 });
-//! edit shop endddd
+//*todo edit shop endddd
 
 
-//! delete shop
+//*todo delete shop
 router.get('/shop/delete/:shopId', (req, res) => {
     shopModel.get(req.params.shopId, function(result) {
         if (result.length > 0) {
@@ -216,11 +216,11 @@ router.post('/shop/delete/:shopId', (req, res) => {
     });
 });
 
-//! delete shop endddddd
+//*todo delete shop endddddd
 
 
 
-//! AJAX code done
+//*todo AJAX XXXXXXXXXXXXXXX
 router.get('/shop/view/:shopId', (req, res) => {
     var shopDetails;
     shopModel.get(req.params.shopId, function(result) {
@@ -245,9 +245,9 @@ router.get('/shop/view/:shopId', (req, res) => {
     });
 });
 
-//! AJAX endddddddddddd
+//*todo AJAX endddddddddddd
 
-//! delete customer
+//*todo delete customer
 router.get('/customers', (req, res) => {
     customerModel.getAll(function(results) {
         if (results.length > 0) {
