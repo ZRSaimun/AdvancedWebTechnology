@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 28, 2020 at 02:20 PM
+-- Generation Time: Nov 29, 2020 at 07:56 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.11
 
@@ -190,13 +190,13 @@ CREATE TABLE `shops` (
 --
 
 INSERT INTO `shops` (`R_ID`, `R_NAME`, `R_DESCRIPTION`, `R_TYPE`, `R_LOCATION`, `R_STATUS`, `R_IMAGE`) VALUES
-(1, 'startech', 'We provide the one stop solution for IT products; your happiness is just a click away. Star Tech believes in quality customer care service that ease your purchase procedure and after sale facilities. A lifelong relationship with customers is our main moto to make you feel precious in every experience.', 'Vegan', 'mirpur', 'VALID', '/pictures/start.jpg.jpg'),
-(3, 'startech', 'We provide the one stop solution for IT products; your happiness is just a click away. Star Tech believes in quality customer care service that ease your purchase procedure and after sale facilities. A lifelong relationship with customers is our main moto to make you feel precious in every experience.', 'Fast Food', 'Basundhara', 'VALID', '/pictures/start.jpg.jpg'),
-(4, 'startech', 'We provide the one stop solution for IT products; your happiness is just a click away. Star Tech believes in quality customer care service that ease your purchase procedure and after sale facilities. A lifelong relationship with customers is our main moto to make you feel precious in every experience.', 'Pizza', 'Dhanmondi', 'VALID', '/pictures/start.jpg.jpg'),
-(5, 'gjgh', 'We provide the one stop solution for IT products; your happiness is just a click away. Star Tech believes in quality customer care service that ease your purchase procedure and after sale facilities. A lifelong relationship with customers is our main moto to make you feel precious in every experience.', 'Pizza', 'jfghj', 'VALID', '/pictures/start.jpg.jpg'),
-(6, 'fgf', 'fgfdg', 'sfdg', 'sfdgsfdg', 'VALID', '/pictures/start.jpg.jpg'),
-(7, 'sdf', 'dfgh', 'fgdhfgdh', 'fgdh', 'VALID', ''),
-(8, 'rassssssss', 'We provide the one stop solution for IT products; your happiness is just a click away. Star Tech believes in quality customer care service that ease your purchase procedure and after sale facilities. A lifelong relationship with customers is our main moto to make you feel precious in every experience.', 'sssssss', 'sssssssss', 'VALID', '/pictures/start.jpg.jpg');
+(1, 'startech', 'We provide the one stop solution for IT products; your happiness is just a click away. Star Tech believes in quality customer care service that ease your purchase procedure and after sale facilities. A lifelong relationship with customers is our main moto to make you feel precious in every experience.', 'Repair', 'mirpur', 'VALID', '/pictures/start.jpg.jpg'),
+(3, 'startech', 'We provide the one stop solution for IT products; your happiness is just a click away. Star Tech believes in quality customer care service that ease your purchase procedure and after sale facilities. A lifelong relationship with customers is our main moto to make you feel precious in every experience.', 'Retail', 'Basundhara', 'VALID', '/pictures/start.jpg.jpg'),
+(4, 'startech', 'We provide the one stop solution for IT products; your happiness is just a click away. Star Tech believes in quality customer care service that ease your purchase procedure and after sale facilities. A lifelong relationship with customers is our main moto to make you feel precious in every experience.', 'Retail', 'Dhanmondi', 'VALID', '/pictures/start.jpg.jpg'),
+(5, 'gjgh', 'We provide the one stop solution for IT products; your happiness is just a click away. Star Tech believes in quality customer care service that ease your purchase procedure and after sale facilities. A lifelong relationship with customers is our main moto to make you feel precious in every experience.', 'Repair', 'jfghj', 'VALID', '/pictures/start.jpg.jpg'),
+(6, 'fgf', 'fgfdg', 'Retail', 'sfdgsfdg', 'VALID', '/pictures/start.jpg.jpg'),
+(7, 'sdf', 'dfgh', 'Retail', 'fgdh', 'VALID', ''),
+(8, 'rassssssss', 'We provide the one stop solution for IT products; your happiness is just a click away. Star Tech believes in quality customer care service that ease your purchase procedure and after sale facilities. A lifelong relationship with customers is our main moto to make you feel precious in every experience.', 'Retail', 'sssssssss', 'VALID', '/pictures/start.jpg.jpg');
 
 -- --------------------------------------------------------
 
