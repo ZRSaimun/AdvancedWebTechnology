@@ -96,7 +96,7 @@ router.get('/shop/:shopId/computer/review/:productId', (req, res) => {
 //*todo AJAX XXXXXXXX
 router.get('/productReview/:productId/:commentText', (req, res) => {
     var comment = {
-        customerId: req.session.uId,
+        memberId: req.session.uId,
         text: req.params.commentText,
         time: new Date(),
         productId: req.params.productId
@@ -104,6 +104,7 @@ router.get('/productReview/:productId/:commentText', (req, res) => {
     console.log("ajaxxx");
 
     console.log(comment.productId);
+    console.log(comment);
     productReviewModel.insert(comment, function(success) {
         if (success) {
             console.log("ajax done");
