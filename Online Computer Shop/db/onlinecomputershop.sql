@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 29, 2020 at 08:01 AM
+-- Generation Time: Nov 29, 2020 at 08:33 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.11
 
@@ -136,9 +136,16 @@ CREATE TABLE `product_review` (
   `FR_ID` int(11) NOT NULL,
   `FR_TEXT` text NOT NULL,
   `FR_TIME` date NOT NULL,
-  `F_ID` int(11) NOT NULL,
+  `F_ID` varchar(11) NOT NULL,
   `M_ID` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `product_review`
+--
+
+INSERT INTO `product_review` (`FR_ID`, `FR_TEXT`, `FR_TIME`, `F_ID`, `M_ID`) VALUES
+(1, 'dfgdfgdfg', '2020-11-29', '1', 'c');
 
 -- --------------------------------------------------------
 
@@ -311,7 +318,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `product_review`
 --
 ALTER TABLE `product_review`
-  MODIFY `FR_ID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `FR_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `seller`
